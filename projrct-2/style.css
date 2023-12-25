@@ -1,0 +1,340 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-size: 10px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.8em;
+  color: #666;
+}
+.mar-bot {
+  margin-bottom: 20px;
+  display: inline-block;
+}
+.header {
+  background: url(" https://github.com/anshuopinion/10-Practice-Project-Html-CSS/blob/Project-4-Landing-Page/Project%204/images/developer.png?raw=true");
+  position: relative;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.text {
+  position: absolute;
+  display: inline-block;
+  padding: 50px;
+  left: 15%;
+  color: #fff;
+  font-size: 3.8rem;
+  letter-spacing: 2px;
+}
+
+.small {
+  font-size: 1.6rem;
+}
+.work {
+  padding: 50px 50px;
+  color: #fff;
+  background-color: rgb(12, 15, 19);
+}
+
+.work-text {
+  font-size: 4.5rem;
+  letter-spacing: 2px;
+  text-align: center;
+}
+.large {
+  font-size: 7rem;
+}
+.cards {
+  margin: 0 40px;
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  /* height: 560px; */
+}
+.card {
+  width: 320px;
+  border-radius: 20px;
+  box-shadow: 3px 5px 5px rgba(1, 1, 1, 0.2);
+  height: 400px;
+  transition: all 0.3s ease-in-out;
+}
+.card:hover {
+  transform: scale(1.04);
+  box-shadow: 3px 5px 5px rgba(1, 1, 1, 0.3);
+  transition: all 0.3s ease-in-out;
+}
+
+.card-text {
+  height: 200px;
+  padding: 15px;
+}
+.card-text h2 {
+  font-weight: 700;
+  margin: 8px 10px;
+}
+.card-text p {
+  font-size: 1.6rem;
+  line-height: 20px;
+}
+.image-box {
+  width: 100%;
+  height: 190px;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  background-color: rgb(12, 15, 19);
+  font-size: 18px;
+  color: #fff;
+  font-weight: 200;
+}
+.contact {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+}
+.about-me,
+.contact-me {
+  width: 50%;
+  height: 230px;
+  padding: 30px 60px;
+  color: #fff;
+}
+.about-heading {
+  font-size: 3rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+}
+.about-me p,
+.contact-me p {
+  font-size: 1.6rem;
+  line-height: 25px;
+}
+.about-me {
+  background-color: rgb(124, 2, 2);
+}
+.contact-me {
+  background-color: rgb(57, 83, 5);
+}
+/* MEDIA QUERIES */
+@media (max-width: 1440px) {
+  .text {
+    left: 4%;
+  }
+  .card-text h2 {
+    font-size: 20px;
+  }
+  .card-text p {
+    font-size: 18px;
+  }
+  .about-heading {
+    font: 40px;
+  }
+  .contact-me p,
+  .about-me p {
+    font-size: 20px;
+  }
+  .footer p {
+    font-size: 20px;
+  }
+}
+@media (max-width: 1024px) {
+  .cards {
+    display: block;
+  }
+  /* .media-box {
+      display: flex;
+      justify-content: space-evenly;
+      gap: 20px;
+    } */
+  .card-1,
+  .card-2 {
+    display: inline-block;
+  }
+  .card-1 {
+    margin: 50px 78px;
+  }
+  .card-3 {
+    margin: 50px auto;
+  }
+  .about-heading {
+    font-size: 30px;
+  }
+  .contact-me p,
+  .about-me p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .work-text {
+    font-size: 35px;
+  }
+  .contact-me p,
+  .about-me p {
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .contact-me,
+  .about-me {
+    padding: 26px 45px;
+  }
+  .cards {
+    margin: 0;
+  }
+  .card-1 {
+    margin: 50px 26px;
+  }
+  .about-heading {
+    margin-bottom: 22px;
+  }
+  footer {
+    font-size: 16px;
+  }
+}
+@media (max-width: 425px) {
+  html {
+    font-size: 8px;
+  }
+  .text {
+    font-size: 26px;
+  }
+  .mar-bot {
+    margin-bottom: 12px;
+  }
+  .small {
+    font-size: 14px;
+  }
+  .large {
+    font-size: 45px;
+  }
+  .work-text {
+    font-size: 16px;
+  }
+  /* .media-box {
+      display: block;
+    } */
+  .card-1,
+  .card-2,
+  .card-3 {
+    display: block;
+  }
+  .cards {
+    margin: 0 52px;
+  }
+  .card {
+    display: inline-block;
+  }
+  .card-1 {
+    margin: 50px auto;
+  }
+  .about-heading {
+    font-size: 18px;
+  }
+  .contact-me p,
+  .about-me p {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .contact-me,
+  .about-me {
+    padding: 16px 15px;
+  }
+  footer {
+    font-size: 12px;
+  }
+}
+@media (max-width: 375px) {
+  html {
+    font-size: 6px;
+  }
+  .mar-bot {
+    margin-bottom: 8px;
+  }
+  .text {
+    font-size: 20px;
+  }
+  .small {
+    font-size: 12px;
+  }
+  .work {
+    padding: 50px 38px;
+  }
+  .work-text {
+    font-size: 14px;
+  }
+  .large {
+    font-size: 36px;
+  }
+  .cards {
+    margin: 0 27px;
+  }
+  .card-3,
+  .card-2,
+  .card-1 {
+    margin: 0 0;
+    margin: 16px -10px;
+  }
+  .card-text h2 {
+    margin: 12px 8px;
+  }
+  .about-heading {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+}
+@media (max-width: 325px) {
+  .text {
+    font-size: 20px;
+    padding: 30px;
+  }
+  .header {
+    width: 100%;
+  }
+  .mar-bot {
+    margin-bottom: 6px;
+  }
+  .work {
+    padding: 28px;
+  }
+  .work-text {
+    font-size: 14px;
+  }
+  .large {
+    font-size: 28px;
+  }
+  /* .media-box {
+      margin: 0 -26px;
+    } */
+  .card-3 {
+    margin: 50px -26px;
+  }
+
+  .contact-me,
+  .about-me {
+    padding: 15px 8px;
+  }
+  .contact-me p,
+  .about-me p {
+    font-size: 10px;
+    line-height: 15px;
+  }
+  .about-heading {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+  footer {
+    padding: 18px 20px;
+    font-size: 12px;
+  }
+}
